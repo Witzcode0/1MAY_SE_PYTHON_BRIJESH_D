@@ -1,0 +1,53 @@
+Data types specify the type of data that a variable can hold. Data types define the size, range, and operations that can be performed on the variables. 
+
+
+1] int: Used to store integer values. It typically occupies 2 or 4 bytes of memory depending on the system architecture.
+
+Example : int age = 25;
+
+2] float: Used to store single-precision floating-point numbers. It typically occupies 4 bytes of memory.
+
+Example : float temperature = 98.6;
+
+3] double: Used to store double-precision floating-point numbers. It typically occupies 8 bytes of memory.
+
+Example : double pi = 3.14159;
+
+
+4] char: Used to store a single character. It typically occupies 1 byte of memory.
+
+Example : char grade = 'A';
+
+
+5] void: Represents the absence of type. It is commonly used as a return type for functions that do not return any value.
+
+EXample : void printMessage() {
+    printf("Hello, world!\n");
+}
+
+
+6] _Bool: Used to store boolean values. It typically occupies 1 byte of memory and can hold either true (1) or false (0).
+
+Example : _Bool isValid = 1;
+
+7] Derived Data Types: These are data types that are derived from the basic data types. Examples include arrays, pointers, structures, and unions.
+
+    - Array: Used to store a collection of elements of the same data type.
+    Example : int numbers[5] = {1, 2, 3, 4, 5};
+
+    - Pointer: Stores the memory address of another variable.
+    Example : int *ptr;
+
+    - Structure: Allows grouping variables of different data types under a single name.
+    Example : struct Person {
+            char name[20];
+            int age;
+        };
+
+    - Union: Similar to structures but only one member can hold a value at any given time.
+    Example : union Data {
+        int num;
+        float decimal;
+    };
+
+

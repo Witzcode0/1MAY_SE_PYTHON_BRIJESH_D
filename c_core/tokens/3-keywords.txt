@@ -1,0 +1,34 @@
+Keywords in C are reserved words that have predefined meanings and purposes within the language. These words cannot be used as identifiers (such as variable names or function names) because they are reserved for specific language constructs. 
+
+auto: Declares automatic variables.
+break: Exits from a loop or a switch statement.
+case: Marks a particular case within a switch statement.
+char: Declares a character type variable.
+const: Declares constants.
+continue: Skips the rest of the loop body and continues with the next iteration.
+default: Specifies the default case within a switch statement.
+do: Starts a do-while loop.
+double: Declares a double-precision floating-point type variable.
+else: Part of the if-else conditional statement.
+enum: Declares an enumeration type.
+extern: Declares a variable or function as being defined externally.
+float: Declares a floating-point type variable.
+for: Starts a for loop.
+goto: Transfers control to a labeled statement.
+if: Starts an if statement.
+int: Declares an integer type variable.
+long: Declares a long integer type variable.
+register: Declares register variables.
+return: Returns a value from a function.
+short: Declares a short integer type variable.
+signed: Declares signed integer types.
+sizeof: Returns the size of a data type or variable.
+static: Declares static variables and functions.
+struct: Declares a structure type.
+switch: Starts a switch statement.
+typedef: Creates new data types with aliases.
+union: Declares a union type.
+unsigned: Declares unsigned integer types.
+void: Indicates the absence of a data type.
+volatile: Indicates that a variable can be modified externally.
+while: Starts a while loop.

@@ -1,0 +1,32 @@
+identifiers are names given to various program elements such as variables, functions, arrays, etc. They serve as labels for these elements, allowing programmers to refer to them within their code. 
+
+Naming Rules:
+
+1] [a-z, A-Z, 0-9, _]
+Examples: age, first_name, level_1
+
+
+2] you can not start with digit
+Examples:  1level 
+
+3] special symbols are not allowed
+Examples: C#code, @test
+
+4] White-space are not allowed
+Examples: first name
+
+5] identifiers must be unique
+Examples: bill = 50, int bill(){}
+
+6] case sensitive
+Examples: firstname, first_name, FirstName, FIRSTNAME, 
+
+7] kyewords are not allowed
+for = 10
+
+
+
+Best Practices:
+
+- Choose meaningful and descriptive names for identifiers to improve code readability.
+- Follow a consistent naming convention (e.g., camelCase, snake_case, PascalCase) to enhance code maintainability.

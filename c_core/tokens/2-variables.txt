@@ -1,0 +1,12 @@
+A variable is a named memory location used to store data that can be manipulated or accessed within a program.
+
+Syntax:
+
+data_type variable_name;
+data_type variable_name = value;
+
+
+int num1, num2;
+
+int num1;
+float num2;

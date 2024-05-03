@@ -30,3 +30,4 @@ Best Practices:
 
 - Choose meaningful and descriptive names for identifiers to improve code readability.
 - Follow a consistent naming convention (e.g., camelCase, snake_case, PascalCase) to enhance code maintainability.
+

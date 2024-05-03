@@ -1,0 +1,20 @@
+here's a list of commonly used format specifiers in C along with brief explanations:
+
+%d: Used to format and print integers, including both signed and unsigned integers.
+%f: Formats and prints floating-point numbers, such as float and double.
+%c: Formats and prints a single character.
+%s: Formats and prints strings (arrays of characters terminated by null character '\0').
+%p: Formats and prints pointer addresses in hexadecimal notation.
+%u: Formats and prints unsigned integers.
+%ld: Formats and prints long integers.
+%lu: Formats and prints unsigned long integers.
+%lld: Formats and prints long long integers.
+%llu: Formats and prints unsigned long long integers.
+%x: Formats and prints integers in hexadecimal notation.
+%o: Formats and prints integers in octal notation.
+%e: Formats and prints floating-point numbers in scientific notation.
+%g: Formats and prints floating-point numbers in either decimal or scientific notation, whichever is more compact.
+%X: Similar to %x, but prints hexadecimal numbers in uppercase.
+%o: Prints integers in octal notation.
+%n: Used to store the number of characters printed so far.
+%i: Similar to %d, used to format and print integers in base 10, octal, or hexadecimal based on the prefix.

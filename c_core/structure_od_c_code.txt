@@ -1,0 +1,54 @@
+
+The structure of a typical C program consists of several components, including preprocessor directives, global declarations, function definitions, and the main function.
+
+# linking section 
+Preprocessor Directives: These lines start with a '#' symbol and are processed before the compilation of the program begins. Common directives include #include for including header files, #define for defining constants or macros, and #ifdef for conditional compilation.
+
+Example : 
+#include <stdio.h>
+#define MAX_SIZE 100
+
+Global Declarations: These are declarations of variables and functions that are accessible throughout the program. Global variables are declared outside of any function, while global functions are typically declared before the main() function.
+
+Example :
+int globalVariable;
+void globalFunction();
+
+Function Definitions: These are the implementations of the functions declared in the global declarations section. Functions can be defined before or after the main() function, but their prototypes should be declared beforehand if they are defined after main().
+
+Example :
+void globalFunction() {
+    // Function implementation
+}
+
+
+Main Function: Every C program must have a main() function. This is where the execution of the program begins.
+
+Example :
+int main() {
+    // Main function body
+    return 0;
+}
+
+
+Putting it all together, a simple C program might look like this:
+
+// documentation section
+#include <stdio.h> // linking section
+#define MAX_SIZE 100 
+
+int globalVariable; // global declaration section
+
+void globalFunction() { // function defination section before main function 
+    // Function implementation
+}
+
+int main() {
+    // Main function body
+    printf("Hello, World!\n");
+    return 0;
+}
+
+void globalFunction() { // function defination section aftef main function 
+    // Function implementation
+}

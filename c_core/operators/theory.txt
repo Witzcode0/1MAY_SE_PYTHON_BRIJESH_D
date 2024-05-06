@@ -1,0 +1,20 @@
+In C programming, an "operator" refers to a symbol that represents an operation to be performed on one or more operands. Operators in C can be categorized into several types:
+
+Arithmetic Operators: These include addition (+), subtraction (-), multiplication (*), division (/), and modulus (%).
+
+Assignment/Shorthand Operators: These are used to assign values to variables and include simple assignment (=) as well as compound assignment operators like addition assignment (+=), subtraction assignment (-=), etc.
+
+Relational Operators: These are used for comparison and include less than (<), greater than (>), equal to (==), not equal to (!=), less than or equal to (<=), and greater than or equal to (>=).
+
+Logical Operators: These are used to perform logical operations and include logical AND (&&), logical OR (||), and logical NOT (!).
+
+Increment and Decrement Operators: These include the increment (++) and decrement (--) operators.
+
+Bitwise Operators: These operate on individual bits of integer operands and include bitwise AND (&), bitwise OR (|), bitwise XOR (^), bitwise complement (~), left shift (<<), and right shift (>>).
+
+Conditional Operator (Ternary Operator): This is the only ternary operator in C and is represented as a question mark (?) followed by a colon (:). It is used for conditional expressions.
+
+a = b + c
+
+operator - =, +
+operands - a,b,c

@@ -1,0 +1,20 @@
+operator precedence determines the order in which operators are evaluated in an expression. Understanding operator precedence is crucial for writing correct and efficient code. Here's a brief overview of the precedence rules in C, from highest to lowest precedence:
+
+Parentheses (): Parentheses have the highest precedence and are used to override the default precedence of operators. Expressions inside parentheses are evaluated first.
+
+Postfix operators ++ (post-increment), -- (post-decrement): These operators increment or decrement their operand's value after the current value is used in the expression.
+Prefix operators ++ (pre-increment), -- (pre-decrement), + (unary plus), - (unary minus), ! (logical NOT), ~ (bitwise NOT): These operators are applied to their operands before other operators in the expression.
+Multiplicative operators * (multiplication), / (division), % (modulus): These operators perform multiplication, division, or modulus operation on their operands. They have left-to-right associativity.
+Additive operators + (addition), - (subtraction): These operators perform addition or subtraction on their operands. They also have left-to-right associativity.
+Shift operators << (left shift), >> (right shift): These operators shift the bits of their left operand left or right by the number of positions specified by their right operand.
+Relational operators <, >, <=, >=: These operators compare their operands and return a logical value (1 for true, 0 for false) based on the result of the comparison.
+Equality operators == (equal to), != (not equal to): These operators test for equality or inequality between their operands.
+Bitwise AND &: This operator performs a bitwise AND operation on its operands.
+Bitwise XOR ^: This operator performs a bitwise exclusive OR operation on its operands.
+Bitwise OR |: This operator performs a bitwise OR operation on its operands.
+Logical AND &&: This operator performs a logical AND operation on its operands. It short-circuits, meaning the right operand is evaluated only if necessary.
+Logical OR ||: This operator performs a logical OR operation on its operands. It also short-circuits.
+Conditional operator ? :: Also known as the ternary operator, it is a conditional expression that evaluates a condition and returns one of two values depending on whether the condition is true or false.
+Assignment operators =, +=, -= etc.: These operators assign a value to their left operand. They have right-to-left associativity.
+
+Link : https://www.tutorialspoint.com/cprogramming/c_operators_precedence.htm

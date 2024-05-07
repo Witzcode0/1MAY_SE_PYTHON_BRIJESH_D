@@ -10,7 +10,7 @@ Logical Operators: These are used to perform logical operations and include logi
 
 Increment and Decrement Operators: These include the increment (++) and decrement (--) operators.
 
-Bitwise Operators: These operate on individual bits of integer operands and include bitwise AND (&), bitwise OR (|), bitwise XOR (^), bitwise complement (~), left shift (<<), and right shift (>>).
+Bitwise Operators: These operate on individual bits of integer operands and include bitwise AND (&), bitwise OR (|), bitwise XOR (^), left shift (<<), and right shift (>>).
 
 Conditional Operator (Ternary Operator): This is the only ternary operator in C and is represented as a question mark (?) followed by a colon (:). It is used for conditional expressions.
 

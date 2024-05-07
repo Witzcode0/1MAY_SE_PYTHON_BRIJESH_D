@@ -1,0 +1,64 @@
+Conditional statements in C are used to execute different blocks of code based on whether a certain condition is true or false. 
+
+if syntax :
+
+if (condition) {
+    // code to be executed if condition is true
+}
+
+If the condition inside the parentheses evaluates to true, the code block within the curly braces {} is executed. Otherwise, it is skipped.
+
+if-else statement syntax :
+
+if (condition) {
+    // code to be executed if condition is true
+} else {
+    // code to be executed if condition is false
+}
+
+In this case, if the condition is true, the code block after the if is executed; if it's false, the code block after the else is executed.
+
+
+if-else if-else statement syntax:
+
+if (condition1) {
+    // code to be executed if condition1 is true
+} else if (condition2) {
+    // code to be executed if condition2 is true
+} else if (condition3) {
+    // code to be executed if condition3 is true
+} else {
+    // code to be executed if both condition1 and condition2 are false
+}
+
+Nested if-else statements syntax: 
+
+Nested if-else statements in C allow you to have an if-else statement inside another if or else block.
+
+if (condition1) {
+    // code block 1
+    if (condition2) {
+        // code block 2
+    } else {
+        // code block 3
+    }
+} else {
+    // code block 4
+}
+
+
+Switch syntax : 
+
+A switch statement is a control flow statement used to select one of several code blocks to be executed, based on the value of a variable or expression.
+
+switch(expression) {
+    case constant1:
+        // code block
+        break;
+    case constant2:
+        // code block
+        break;
+    // more cases...
+    default:
+        // default code block
+}

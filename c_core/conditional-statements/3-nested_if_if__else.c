@@ -5,12 +5,10 @@ int main() {
     int age;
     float weight;
     
-    printf("Enter age : ");
+    printf("\n\nEnter age : ");
     scanf("%d", &age);
-    
-    
     if (age >= 18 ){
-        printf("Enter weight : ");
+        printf("\nEnter weight : ");
         scanf("%d", &weight);
         if(weight >= 50){
             printf("You can donate");
@@ -20,6 +18,7 @@ int main() {
     }else{
         printf("You can not donate");
     }
+   
     
 
     return 0;

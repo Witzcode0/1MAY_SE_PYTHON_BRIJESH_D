@@ -1,0 +1,24 @@
+a loop is a control flow statement that allows you to execute a block of code repeatedly based on a condition. 
+
+for loop: It is used when you know the number of iterations in advance. It consists of an initialization, a condition, and an increment/decrement expression.
+
+syntax: 
+for (initialization; condition; increment/decrement/update_initialization) {
+    // code to be executed
+}
+
+
+while loop: It is used when you want to execute a block of code repeatedly as long as a condition is true.
+
+syntax:
+while (condition) {
+    // code to be executed
+}
+
+
+do-while loop: It is similar to the while loop, but it always executes the block of code at least once before checking the condition.
+
+syntax:
+do {
+    // code to be executed
+} while (condition);

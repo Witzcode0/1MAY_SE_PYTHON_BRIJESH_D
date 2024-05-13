@@ -129,3 +129,84 @@ int main() {
     
     return 0;
 }
+
+
+https://www.ascii-code.com/
+
+ A B C D E
+ A B C D E
+ A B C D E
+ A B C D E
+ A B C D E
+
+ #include <stdio.h>
+
+int main() {
+    
+    int num = 5;
+    
+    for(int row = 1; row <= num; row++){
+        for(int col = 1; col <= num; col++){
+            printf(" %c", col + 64);
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+
+
+
+ 1 2 3 4 5
+ 1 2 3 4 5
+ 1 2 3 4 5
+ 1 2 3 4 5
+ 1 2 3 4 5
+
+ #include <stdio.h>
+
+int main() {
+    
+    int num = 5;
+    
+    for(int row = 1; row <= num; row++){
+        for(int col = 1; col <= num; col++){
+            printf(" %d", col);
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+
+* * * * *
+*       *
+*       *
+*       *
+* * * * *
+
+#include <stdio.h>
+
+int main() {
+    
+    int num = 5;
+    
+    for(int row = 1; row <= num; row++){
+        for(int col = 1; col <= num; col++){
+            if(row == 1 || row == num || col == 1 || col == num){
+                printf("* ");
+            }else{
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+
+*
+* *
+*   *
+*     *
+* * * * *

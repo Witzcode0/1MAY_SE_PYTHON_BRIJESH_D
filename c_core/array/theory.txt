@@ -1,0 +1,44 @@
+An array in C is a collection of elements of the same type stored in contiguous memory locations. Arrays are used to store multiple values in a single variable, which can be accessed using an index. 
+
+1] Declaration and Initialization
+To declare an array, you specify the type of its elements and the number of elements it will hold:
+
+syntax : data_type array_name[size];
+
+OR 
+
+data_type array_name[size] = {element1, element2...., elementn};
+
+
+- Accessing Array Elements
+Array elements are accessed using an index, with the first element having an index of 0:
+
+int numbers[5] = {1, 2};
+int first = numbers[0];  // Accesses the first element
+numbers[1] = 10;         // Modifies the second element
+
+
+If you provide fewer initializers than the size of the array, the remaining elements will be initialized to zero:
+
+int numbers[5] = {1, 2};  // numbers[2], numbers[3], and numbers[4] will be 0
+
+
+2] Multidimensional Arrays
+C supports multidimensional arrays. The most common type is the two-dimensional array, which can be thought of as an array of arrays:
+
+syntax : data_type array_name[row][col];
+
+OR
+
+data_type array_name[row][col] = {
+    {r1c1, r1c2, r1c3},
+    {r2c1, r2c2, r2c3},
+    {r3c1, r3c2, r3c3},
+}
+
+
+- Array Characteristics
+1] Fixed Size: The size of an array must be specified at compile-time and cannot be changed at runtime.
+2] Contiguous Memory: Elements are stored in contiguous memory locations, allowing for efficient indexing and iteration.
+3] Indexing: Array indexing is zero-based, meaning the first element is at index 0.
+4] Type Consistency: All elements in an array must be of the same type.

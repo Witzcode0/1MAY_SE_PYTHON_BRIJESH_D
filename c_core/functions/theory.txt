@@ -1,0 +1,169 @@
+A function is a block of code that performs a specific task. Functions help organize and modularize code, making it more readable, maintainable, and reusable. 
+
+Components of a Function
+
+> Function Declaration (Prototype):
+
+Describes the function's name, return type, and parameters without providing the actual body of the function.
+
+It helps the compiler ensure that the function is used correctly in terms of arguments and return type.
+
+Syntax: 
+return_type function_name(parameter_list/formal para/formal args){
+    // block of code
+};
+
+function_name(parameter_value_list/actual para/actual args) // function calling
+
+Example: int add(int, int);
+
+
+> Types of Functions
+
+1] Library Functions:
+Predefined functions provided by C's standard library.
+Examples: printf(), scanf(), strlen(), malloc(), etc.
+
+2] User-Defined Functions:
+Functions created by the programmer to perform specific tasks.
+
+void greet() {
+    printf("Hello, World!");
+}
+
+1] with return_type with parameters
+
+#include <stdio.h>
+
+int sum(int a, int b){
+    return a + b;
+}
+
+int main() {
+    printf("total = %d", sum(10, 20));
+
+    return 0;
+}
+
+2] with_out return_type with parameters
+
+#include <stdio.h>
+
+void sum(int a, int b){
+    printf("Total = %d\n", a + b);
+}
+
+int main() {
+    sum(10, 20);
+    sum(100, 200);
+
+    return 0;
+}
+
+
+3] with return_type with_out parameters
+
+#include <stdio.h>
+
+int sum(){
+    int a = 10, b = 20;
+    return a + b;
+}
+
+int main() {
+    printf("total = %d", sum());
+
+    return 0;
+}
+
+
+4] with_out return_type with_out parameters
+
+#include <stdio.h>
+
+void sum(){
+    int a = 10, b = 20;
+    printf("total = %d", a + b);
+}
+
+int main() {
+    sum();
+
+    return 0;
+}
+
+
+> Key Points
+- Return Type: Specifies the type of value the function returns. void indicates no return value.
+- Function Name: Identifies the function. Must be unique within the scope.
+- Parameter List: Specifies the parameters (inputs) the function takes. Can be empty if no parameters are needed.
+- Function Body: Contains the statements that define what the function does.
+
+
+> Benefits of Using Functions
+- Modularity: Breaks down a program into smaller, manageable, and independent blocks.
+- Reusability: Allows reuse of code by calling the function multiple times.
+- Maintainability: Makes the code easier to understand and modify.
+- Debugging: Simplifies debugging and testing by isolating functional units.
+
+> Recusive function
+
+1 + 2 + 3 + 4 + 5 ......n
+
+#include <stdio.h>
+
+int sum_of_n(int num){
+    if (num == 1){
+        return 1;
+    }else{
+        return num + sum_of_n(num - 1);
+    }
+   
+}
+
+int main() {
+    printf("Total = %d", sum_of_n(5));
+
+    return 0;
+}
+
+- find factorial using recursion function
+#include <stdio.h>
+
+int factorial(int num){
+    if (num == 1){
+        return 1;
+    }else{
+        return num * factorial(num - 1);
+    }
+   
+}
+
+int main() {
+    printf("Total = %d", factorial(5));
+
+    return 0;
+}
+
+0 1 1 2 3 5 .....
+
+#include <stdio.h>
+
+int fibonacci(int num) {
+    if (num <= 0) {
+        return 0;
+    } else if (num == 1) {
+        return 1;
+    } else {
+        return fibonacci(num - 1) + fibonacci(num - 2);
+    }
+}
+
+int main() {
+    int n;
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
+    printf("Fibonacci number at position %d is %d\n", n, fibonacci(n));
+
+    return 0;
+}

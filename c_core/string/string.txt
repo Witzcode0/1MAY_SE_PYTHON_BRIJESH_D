@@ -1,0 +1,27 @@
+A string is essentially an array of characters. It is a sequence of characters terminated by a special character known as the null character ('\0'). This null character indicates the end of the string.
+
+Character Array: A string in C is represented as an array of characters. 
+
+For example:
+char str[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
+
+Here, str is an array of characters with the string "Hello". The last character is '\0', marking the end of the string.
+
+String Literals: Strings can also be declared and initialized using string literals. 
+
+For example:
+char str[] = "Hello";
+
+In this case, the compiler automatically adds the null character at the end of the string.
+
+
+Common String Operations
+
+C provides a set of standard library functions for string manipulation, which are declared in the header file <string.h>. Some common functions include:
+
+
+strchr(): Finds the first occurrence of a character in a string.
+char *ptr = strchr(str, 'e');  // Points to the first 'e' in "Hello"
+
+strstr(): Finds the first occurrence of a substring in a string.
+char *ptr = strstr(str, "ell");  // Points to "ello" in "Hello"

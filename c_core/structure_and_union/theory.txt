@@ -1,0 +1,202 @@
+ a structure (often referred to as struct) is a user-defined data type that allows the grouping of variables of different types under a single name. This is particularly useful for organizing related data together. Structures can contain variables of various types, including other structures, arrays, and basic data types such as int, float, char, etc.
+
+Defining a Structure
+To define a structure, you use the struct keyword followed by a block that contains the member definitions. Here’s an example:
+
+syntax : 
+struct name_of_struct {
+    // data
+};
+
+Example :
+
+struct Person {
+    char name[50];
+    int age;
+    float height;
+};
+
+
+struct Person p1, p2;
+
+You can also define and declare the structure in a single line:
+
+struct Person {
+    char name[50];
+    int age;
+    float height;
+} person1, person2;
+
+
+Accessing Structure Members: 
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    struct Person person1;
+    
+    // Assigning values to structure members
+    strcpy(person1.name, "John Doe");
+    person1.age = 30;
+    person1.height = 5.9;
+
+    // Accessing and printing structure members
+    printf("Name: %s\n", person1.name);
+    printf("Age: %d\n", person1.age);
+    printf("Height: %.1f\n", person1.height);
+
+    return 0;
+}
+
+
+Pointers to Structures: 
+
+You can also have pointers to structures. Accessing members of a structure through a pointer requires using the arrow (->) operator:
+
+struct Person *ptr = &person1;
+ptr->age = 31;
+printf("Updated Age: %d\n", ptr->age);
+
+
+Nested Structures
+Structures can be nested within other structures:
+
+struct Address {
+    char street[100];
+    char city[50];
+    int zip;
+};
+
+struct Person {
+    char name[50];
+    int age;
+    float height;
+    struct Address address;
+};
+
+
+Typedef for Structures
+
+To simplify the syntax, you can use typedef to create an alias for a structure:
+
+typedef struct {
+    char name[50];
+    int age;
+    float height;
+} Person;
+
+Person person1, person2;
+
+
+
+
+
+
+a union is a user-defined data type similar to a struct, but with a key difference: while a struct allocates enough space to hold all its members, a union only allocates enough space to hold the largest member. This means that, at any given time, a union can store a value for only one of its members. All members share the same memory location.
+
+Defining a Union
+
+To define a union, you use the union keyword followed by a block that contains the member definitions. Here’s an example:
+
+union Data {
+    int i;
+    float f;
+    char str[20];
+};
+
+
+In this example, Data is a union type that contains three members: i (an integer), f (a floating-point number), and str (a character array).
+
+Declaring Union Variables
+Once a union is defined, you can declare variables of that union type. For instance:
+
+union Data data1, data2;
+
+You can also define and declare the union in a single line:
+
+union Data {
+    int i;
+    float f;
+    char str[20];
+} data1, data2;
+
+
+Accessing Union Members
+
+You access the members of a union variable using the dot (.) operator. Here’s how you can assign values to the members of data1 and access them:
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    union Data data;
+
+    // Assigning an integer value
+    data.i = 10;
+    printf("data.i: %d\n", data.i);
+
+    // Assigning a floating-point value
+    data.f = 220.5;
+    printf("data.f: %.1f\n", data.f);
+
+    // Assigning a string value
+    strcpy(data.str, "Hello");
+    printf("data.str: %s\n", data.str);
+
+    return 0;
+}
+
+Important Note
+
+Because all members of a union share the same memory location, writing to one member can overwrite the value of another member. In the example above, only one of data.i, data.f, or data.str will hold a valid value at any given time.
+
+Typedef for Unions
+
+To simplify the syntax, you can use typedef to create an alias for a union:
+
+typedef union {
+    int i;
+    float f;
+    char str[20];
+} Data;
+
+Data data1, data2;
+
+This eliminates the need to use the union keyword when declaring variables of this type.
+
+Union Example with Accessing Members
+Here’s a more comprehensive example demonstrating the use of a union:
+
+#include <stdio.h>
+#include <string.h>
+
+typedef union {
+    int i;
+    float f;
+    char str[20];
+} Data;
+
+int main() {
+    Data data;
+
+    data.i = 10;
+    printf("After setting data.i:\n");
+    printf("data.i: %d\n", data.i);
+    printf("data.f: %.1f\n", data.f);
+    printf("data.str: %s\n\n", data.str);
+
+    data.f = 220.5;
+    printf("After setting data.f:\n");
+    printf("data.i: %d\n", data.i);
+    printf("data.f: %.1f\n", data.f);
+    printf("data.str: %s\n\n", data.str);
+
+    strcpy(data.str, "Hello");
+    printf("After setting data.str:\n");
+    printf("data.i: %d\n", data.i);
+    printf("data.f: %.1f\n", data.f);
+    printf("data.str: %s\n", data.str);
+
+    return 0;
+}

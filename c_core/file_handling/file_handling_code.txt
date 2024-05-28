@@ -1,0 +1,114 @@
+1] create file
+
+#include<stdio.h>
+
+int main(){
+
+    FILE *f;
+
+    f = fopen("sample.txt", "w");
+
+    if (f == NULL){
+        printf("Unable to create a file.");
+        return 0;
+    } else {
+        printf("File successfully created");
+        return 0;
+    }
+
+
+}
+
+2] write data into the file
+
+#include<stdio.h>
+
+int main(){
+
+    FILE *f;
+    char data[255];
+
+    f = fopen("sample.txt", "w");
+
+    if (f == NULL){
+        printf("Unable to open a file.\n");
+
+    } else {
+        printf("File successfully opend\n");
+
+    }
+
+    printf("Enter something... ");
+    fgets(data, sizeof(data), stdin);
+
+    fprintf(f, "%s", data);
+
+    fclose(f);
+
+    return 0;
+}
+
+
+3] read data from the file
+
+#include<stdio.h>
+
+int main(){
+
+    FILE *f;
+    char data[255];
+
+    f = fopen("sample.txt", "r");
+
+    if (f == NULL){
+        printf("Unable to open a file.\n");
+
+    } else {
+        printf("File successfully opend\n");
+
+    }
+
+    fgets(data, sizeof(data), f);
+
+    printf("Data %s", data);
+    fclose(f);
+
+    return 0;
+}
+
+
+4] delete file
+
+#include<stdio.h>
+
+int main(){
+
+    char fn[] = "sample.txt";
+
+    int res = remove(fn);
+
+    if (res == 0){
+        printf("File is deleted.");
+    }else{
+        printf("File not delete.");
+    }
+    return 0;
+}
+
+5] rename file
+
+#include<stdio.h>
+
+int main(){
+
+    char fn1[] = "sample.pdf";
+    char fn2[] = "sample_1.txt";
+    int res = rename(fn1, fn2);
+
+    if (res == 0){
+        printf("File is renamed.");
+    }else{
+        printf("File not rename.");
+    }
+    return 0;
+}

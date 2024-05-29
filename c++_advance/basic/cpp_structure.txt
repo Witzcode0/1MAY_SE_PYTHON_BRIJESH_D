@@ -1,0 +1,87 @@
+1. Preprocessor Directives :
+
+These are lines included at the beginning of the program and are processed by the preprocessor before the compilation of the code begins. They usually include header files.
+
+#include <iostream>  // For standard input and output
+#include <string>    // For using string class
+
+2. Namespace Declaration
+
+Namespaces are used to avoid name conflicts. The standard namespace (std) is often used in C++.
+
+printf - > std::cout
+scanf - > std::cin
+
+using namespace std;
+
+3.Function Prototypes (Optional)
+
+Function prototypes are declarations of functions that tell the compiler about the function name, return type, and parameters before they are defined.
+
+int add(int a, int b);
+void displayMessage();
+
+4. Main Function
+
+The main function is the entry point of any C++ program. Execution starts from the main function.
+
+int main() {
+    // Your code here
+    return 0;
+}
+
+5. Function Definitions
+
+This section includes the actual implementation of the functions declared earlier.
+
+int add(int a, int b) {
+    return a + b;
+}
+
+void displayMessage() {
+    cout << "Hello, World!" << endl;
+}
+
+
+Full Example
+Here is a complete example of a C++ program that demonstrates the structure described above:
+
+#include <iostream>  // Include input-output stream
+#include <string>    // Include string library
+
+using namespace std;  // Use the standard namespace
+
+// Function prototype for adding two integers
+int add(int a, int b);
+
+// Function prototype for displaying a message
+void displayMessage();
+
+// Main function
+int main() {
+    int num1, num2, sum;
+    
+    cout << "Enter first number: ";
+    cin >> num1;  // Input first number
+    
+    cout << "Enter second number: ";
+    cin >> num2;  // Input second number
+    
+    sum = add(num1, num2);  // Call add function
+    
+    cout << "The sum is: " << sum << endl;  // Output the sum
+    
+    displayMessage();  // Call displayMessage function
+    
+    return 0;  // Return 0 to indicate successful execution
+}
+
+// Function definition for adding two integers
+int add(int a, int b) {
+    return a + b;  // Return the sum
+}
+
+// Function definition for displaying a message
+void displayMessage() {
+    cout << "Hello, World!" << endl;  // Output a message
+}

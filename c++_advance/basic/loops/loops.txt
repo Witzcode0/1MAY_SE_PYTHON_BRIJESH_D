@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+// * _ _ _ *
+// * _ _ _ *
+// * _ _ _ *
+// * _ _ _ *
+// * _ _ _ *
+
+int main() {
+    int num = 5;
+    for(int row = 1; row<=num; row+=1){
+        for(int col = 1; col<=num; col+=1){
+            if(col==1 || col == num){
+                cout<<"*"<<" ";
+            }else{
+                cout<<"_"<<" ";
+            }
+        } 
+        cout<<endl;
+    } 
+
+    return 0;
+}

@@ -1,0 +1,25 @@
+
+Object-Oriented Programming (OOP) in C++ is a programming paradigm that uses objects and classes to organize software design. C++ is an extension of the C programming language and incorporates features that facilitate OOP. Here are the key concepts and their implementation in C++:
+
+1] class and objects
+    - attribute or property
+    - function or method
+2] encapsulation
+    - access specifiers
+    - constructor and destructor
+    - getter and setter method
+3] inheritance
+    - types of inheritance:
+        - single
+        - multilevel
+        - multiple
+        - hirarchical
+        - hybrid
+4] abstraction
+5] polymorphisum
+    - compile time
+    - run time
+
+- friend function
+- inline function
+- virtual function

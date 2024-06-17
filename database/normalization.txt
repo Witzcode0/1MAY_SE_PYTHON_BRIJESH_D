@@ -1,0 +1,24 @@
+Normalization in the context of databases refers to the process of organizing data in a database efficiently. It involves structuring a database schema in such a way that it reduces redundancy and dependency by dividing large tables into smaller tables and defining relationships between them.
+
+Goals of Normalization:
+Eliminate Redundancy: Redundant data wastes storage space and increases the likelihood of inconsistencies. Normalization aims to store each piece of data in only one place, reducing redundancy.
+
+Minimize Data Dependency: Dependency refers to how changes in one part of the database affect other parts. By organizing data into smaller, related tables, normalization reduces the impact of changes and ensures data consistency.
+
+Improve Data Integrity: With reduced redundancy and well-defined relationships, normalization helps maintain data integrity — ensuring that data is accurate, valid, and up-to-date.
+
+Normal Forms:
+Normalization is typically described in terms of normal forms. Each normal form represents a level of organizing data in a database:
+
+First Normal Form (1NF):
+
+Ensures that each column contains atomic (indivisible) values, meaning no repeating groups or arrays.
+Example: If a table has columns for "Phone Number 1", "Phone Number 2", etc., these should be split into separate rows.
+Second Normal Form (2NF):
+
+Meets the requirements of 1NF and ensures that all non-key attributes are fully dependent on the primary key.
+Example: If a table has a composite primary key and some columns depend on only part of the key, those should be moved to a separate table.
+Third Normal Form (3NF):
+
+Meets the requirements of 2NF and eliminates transitive dependencies — where a non-key attribute depends on another non-key attribute.
+Example: If a column depends on another non-key column, both should be moved to a separate table.

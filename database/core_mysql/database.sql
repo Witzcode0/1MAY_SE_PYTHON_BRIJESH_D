@@ -28,7 +28,7 @@ Database changed
 
 
 -- 4] database import/export (update database/transfer database)
-IMPORT Database:
+EXPORT Database:
 s-1] open your CMD:
 (specific-dir)>>>mysqldump -u <username> -p <import_database_name> > <data-dump>.sql
 Enter password: ****
@@ -36,7 +36,7 @@ Enter password: ****
 s-2] check your specific dir(specific-dir)
  - <data-dump>.sql
 
-EXPORT Database:
+IMPORT Database:
 s-3] (specific-dir)>>> mysql -u <username> -p <new_database> < <data-dump>.sql
  
 

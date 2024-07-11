@@ -1,0 +1,24 @@
+Technology : Python
+Assignments No: 1
+topics: basic, operators, conditional statements
+Due date : 15-Jul-2024
+----------------------------------------------------------------
+1. Write a Python program to calculate the area of a rectangle given its length and width.
+
+2. Write a Python program that compares two integers and prints whether the first integer is greater, less than, or equal to the second integer.
+
+3. Write a Python program to swap two variables without using a temporary variable.
+
+4. Write a Python program to check if a number is between 1 and 10 (inclusive).
+
+5. Write a Python program to perform bitwise AND, OR, and XOR operations on two integers.
+
+6. Write a Python program that checks if a number is positive, negative, or zero.
+
+7. Write a Python program that checks if a number is even or odd.
+
+8. Write a Python program that determines if a student's grade is 'A', 'B', 'C', 'D', or 'F' based on their score.
+
+9. Write a Python program that checks if a number is divisible by both 3 and 5, divisible only by 3, divisible only by 5, or not divisible by either.
+
+10. Write a Python program that checks if a year is a leap year. A leap year is divisible by 4, but not divisible by 100 unless it is also divisible by 400.

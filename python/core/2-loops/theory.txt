@@ -1,0 +1,15 @@
+1. while Loop
+The while loop continues to execute as long as a specified condition is true. It checks the condition before each iteration.
+
+syntax :
+
+while (condition):
+    block of code
+
+2. for Loop
+The for loop iterates over a sequence (like a list, tuple, dictionary, set, or string). It executes a block of code for each item in the sequence.
+
+syntax:
+
+for iter_var in sequence:
+    code of block

@@ -22,3 +22,45 @@ Due date : 15-Jul-2024
 9. Write a Python program that checks if a number is divisible by both 3 and 5, divisible only by 3, divisible only by 5, or not divisible by either.
 
 10. Write a Python program that checks if a year is a leap year. A leap year is divisible by 4, but not divisible by 100 unless it is also divisible by 400.
+
+
+Technology : Python
+Assignments No: 2
+topics: loops
+Due date : 17-Jul-2024
+----------------------------------------------------------------
+1. Write a program to print numbers from 1 to 10 using a for loop.
+
+2. Create a program that calculates the sum of the first 100 natural numbers using a while loop.
+
+3. Write a program to compute the factorial of a number (input from the user) using a for loop.
+
+4. Given a list of numbers, use a for loop to print each number squared.
+
+5. Write a program that counts how many even and odd numbers are in a list.
+
+6. Create a program that prints numbers from 1 to 50. For multiples of three, print "Fizz" instead of the number, and for multiples of five, print "Buzz." For numbers that are multiples of both three and five, print "FizzBuzz."
+
+7. Write a program that takes a string input from the user and prints it in reverse using a for loop.
+
+8. Generate a multiplication table for numbers 1 to 10 using nested loops.
+
+9. Create a program that keeps asking the user for numbers until they enter a negative number, and then prints the sum of all entered numbers.
+
+10. Write a program that finds all prime numbers between 1 and 100 using a loop.
+
+11. Generate the Fibonacci sequence up to the nth term (where n is provided by the user) using a loop.
+
+12. Count the occurrences of each character in a string using a loop.
+
+13. Write a program to find the largest number in a list using a loop.
+
+14. Create a list of squares for numbers from 1 to 20 using a loop.
+
+15. Write a program to print the following pattern: "right-angled triangle star pattern"
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * *

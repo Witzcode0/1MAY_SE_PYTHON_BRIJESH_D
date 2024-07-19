@@ -75,3 +75,18 @@ dict_name = {
 
 # for key, value in car.items():
 #     print(key, value)
+
+# start = 1
+# end = 3
+
+# users = []
+# while(start <= end):
+#     user = {}
+#     name, age, salary = input("Enter your name, age and salary separated by comma: ").split(',')
+#     user['name'] = name
+#     user['age'] = int(age)
+#     user['salary'] = float(salary)
+#     users.append(user)
+#     start += 1
+
+# print(users)

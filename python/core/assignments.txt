@@ -100,3 +100,73 @@ for no in range(num):
 Create a list of squares for numbers from 1 to 20 using a loop.
 
 print([num*num for num in range(1, 21)])
+
+
+Technology : Python
+Assignments No: 3
+topics: data collection and string
+Due date : 21-Jul-2024
+----------------------------------------------------------------
+Data Collections
+----------------
+
+List Manipulation:
+1. Write a Python program to find the second largest number in a list.
+
+List Sorting:
+2. Write a Python program to sort a list of tuples based on the second item.
+
+List Slicing:
+3. Write a Python program to get the first and last elements from a list.
+
+List Operations:
+4. Write a Python program to add two lists element-wise.
+
+List Filtering:
+5. Write a Python program to filter out all the even numbers from a list.
+
+Dictionary Manipulation:
+6. Write a Python program to merge two dictionaries.
+
+Dictionary Iteration:
+7. Write a Python program to iterate over a dictionary and print all keys and values.
+
+Set Operations:
+8. Write a Python program to find the intersection of two sets.
+
+Set Manipulation:
+9. Write a Python program to remove an element from a set if it is present.
+
+Tuple Manipulation:
+10. Write a Python program to find the length of a tuple.
+
+Tuple Operations:
+11. Write a Python program to convert a list into a tuple.
+
+Nested List:
+12. Write a Python program to flatten a nested list.
+
+Dictionary Sorting:
+13. Write a Python program to sort a dictionary by its values.
+
+Dictionary Update:
+14. Write a Python program to update the value of a specific key in a dictionary.
+
+List Concatenation:
+15. Write a Python program to concatenate multiple lists.
+
+Strings
+String Reversal:
+16. Write a Python program to reverse a string.
+
+String Case Conversion:
+17. Write a Python program to convert all lowercase characters to uppercase and vice versa in a string.
+
+String Splitting:
+18. Write a Python program to split a string into a list of words.
+
+String Concatenation:
+19. Write a Python program to concatenate two strings with a space in between.
+
+String Palindrome:
+20. Write a Python program to check if a given string is a palindrome.

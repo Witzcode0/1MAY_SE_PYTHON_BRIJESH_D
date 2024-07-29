@@ -8,10 +8,10 @@ string is a sequence of characters. In Python, a string is a built-in data type 
 syntax:
 
 empty_string = ""
-    string_name = "Hello, World!"
-    string_name = str()
-    string_name = 'Hello, World!'
-    string_name = '''Hello, World!'''
+string_name = "Hello, World!"
+string_name = str()
+string_name = 'Hello, World!'
+string_name = '''Hello, World!'''
 
 """
 

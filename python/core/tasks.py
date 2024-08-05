@@ -1,4 +1,4 @@
-
+"""
 TASK-1: Guessing Game Task Explanation
 ------------------------------
 step-1] Setup the Game Environment
@@ -82,4 +82,4 @@ step-6] Handle Multiple Orders
 step-7] Payment and Exit
 
 - Prompt the customer for payment.
-- Thank the customer and exit the program.
+- Thank the customer and exit the program."""

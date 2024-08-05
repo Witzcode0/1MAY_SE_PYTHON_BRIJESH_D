@@ -41,3 +41,7 @@ current_time = datetime.now()
 
 # print(datetime.strftime(current_time, "%d/%m/%Y, %H:%M:%S"))
 # print(datetime.strftime(current_time, "%d/%m/%Y, %I:%M:%S %p"))
+
+# project-1     project-2
+
+# lib1 - 2.1.4  lib1 - 3.4.4

@@ -20,14 +20,14 @@ Here are some common file-handling operations in Python:
 
 file_name = "sample.txt"
 
-file = open(file_name, 'r')
+# file = open(file_name, 'r')
 
-print(file.tell())
+# print(file.tell())
 
-file.seek(7)
-print(file.tell())
+# file.seek(7)
+# print(file.tell())
 
-print(file.read())
+# print(file.read())
 
 # open(file_name, 'x')
 
@@ -35,7 +35,7 @@ print(file.read())
 # data = "This is a python programming."
 # file.write(data)
 
-lines = ['This is a line - 1\n', 'This is a line - 2\n', 'This is a line - 3\n', 'This is a line - 4\n', 'This is a line - 5\n', 'this is a new line']
+# lines = ['This is a line - 1\n', 'This is a line - 2\n', 'This is a line - 3\n', 'This is a line - 4\n', 'This is a line - 5\n', 'this is a new line']
 # file.writelines(lines)
 
 
@@ -75,3 +75,6 @@ lines = ['This is a line - 1\n', 'This is a line - 2\n', 'This is a line - 3\n',
 # zinal.png
 # zinal.png
 
+# with open(r'F:\molmeh\class\1MAY_SE_PYTHON_BRIJESH_D\python\advance\file-handling\example.txt', 'r') as file:
+#     data = file.read()
+#     print(data)
